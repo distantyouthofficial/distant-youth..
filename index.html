@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>try{var __t=localStorage.getItem("dy-theme");if(__t==="dark"||__t==="light")document.documentElement.setAttribute("data-theme",__t)}catch(e){}</script>
 <title>Distant Youth beta</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -461,7 +462,133 @@ main.swap{animation:swap .5s cubic-bezier(.2,.7,.2,1) both}
 .top.over:not(.solid) .cart{color:#fff}
 .top.over:not(.solid) .burger span{background:#fff}
 .top.over.solid{background:rgba(255,255,255,.9);border-bottom:1px solid var(--line);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+/* ---- dark theme (colours only) ---- */
+html[data-theme="dark"]{background:#000}
+html[data-theme="dark"] body{background:transparent}
+html[data-theme="dark"] .bgfx{background:radial-gradient(ellipse at 50% 0%,#15171d 0%,#050505 62%)}
+html[data-theme="dark"] .bgfx::after{background:radial-gradient(circle at calc(var(--mx)*100%) calc(var(--my)*100%),rgba(255,205,140,.28),transparent 38%),linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.46))}
+html[data-theme="dark"] .top{background:rgba(0,0,0,.55)}
+html[data-theme="dark"] .logo.chrome{background:radial-gradient(circle at calc(var(--mx)*100%) calc(var(--my)*100%),#fff 0,rgba(255,255,255,0) 40%),
+  linear-gradient(105deg,#6d737c 0%,#f7f9fb 14%,#9aa1ab 28%,#2f343b 44%,#dfe4ea 58%,#858c96 72%,#fbfcfd 86%,#656b74 100%)}
+html[data-theme="dark"] .btn,html[data-theme="dark"] .btn.add,html[data-theme="dark"] .df .btn{background:#2B45F5;color:#fff}
+html[data-theme="dark"] .btn.ghost{background:none;color:#fff}
+html[data-theme="dark"] .sizes button[aria-pressed="true"]{background:#2B45F5;border-color:#2B45F5;color:#fff}
+html[data-theme="dark"] .cart:hover,html[data-theme="dark"] .x:hover,html[data-theme="dark"] .ctl button:hover,html[data-theme="dark"] .btn.ghost:hover{background:rgba(255,255,255,.18);color:#fff}
+html[data-theme="dark"] .linkbtn:hover,html[data-theme="dark"] .nav a:hover{color:#fff}
+html[data-theme="dark"] .toast{background:#1c1c1c;color:#fff;border:1px solid rgba(255,255,255,.25)}
+html[data-theme="dark"] .bgfx::before{background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
+html[data-theme="dark"] .ann{background:#fff;color:#000}
+html[data-theme="dark"] .band{background:rgba(0,0,0,.35)}
+html[data-theme="dark"] .top{background:rgba(0,0,0,.35)}
+html[data-theme="dark"] .cart{border:0}
+html[data-theme="dark"] .cart:hover{background:none}
+html[data-theme="dark"] .hero{border-bottom:0}
+html[data-theme="dark"] .stage::before{background:radial-gradient(circle at calc(var(--mx)*100%) calc(var(--my)*100%),rgba(160,180,255,.24),transparent 55%)}
+html[data-theme="dark"] .info span{color:#fff}
+html[data-theme="dark"] .sizes button{border-color:rgba(255,255,255,.35)}
+html[data-theme="dark"] .sizes button:hover{border-color:#fff}
+html[data-theme="dark"] .btn.add{background:transparent;border:1px solid #fff;color:#fff}
+html[data-theme="dark"] .btn.add:hover{background:rgba(255,255,255,.18)}
+html[data-theme="dark"] footer{background:rgba(0,0,0,.4)}
+html[data-theme="dark"] .grid article{border:0!important;background:none!important;box-shadow:none!important}
+html[data-theme="dark"] .sub{color:rgba(255,255,255,.82)}
+html[data-theme="dark"] .t1{background:#0c0c0c}
+html[data-theme="dark"] .t1 .g{fill:#f2f2ee}
+html[data-theme="dark"] .t1 .d{stroke:#0c0c0c}
+html[data-theme="dark"] .bgfx::after{background:radial-gradient(circle at calc(var(--mx)*100%) calc(var(--my)*100%),rgba(170,185,255,.12),transparent 36%)}
+html[data-theme="dark"] .ann{background:#0a0a0a;color:#fff;border-bottom:1px solid rgba(255,255,255,.2)}
+html[data-theme="dark"] .pdp-main{background:#000}
+html[data-theme="dark"] .pdp-thumbs button{background:#000;border:1px solid rgba(255,255,255,.25)}
+html[data-theme="dark"] .pdp-thumbs button[aria-current="true"]{border-color:#fff}
+html[data-theme="dark"] .pdp-thumbs b{background:rgba(0,0,0,.65);color:#fff}
+html[data-theme="dark"] .sg{border-top:1px solid rgba(255,255,255,.25);border-bottom:1px solid rgba(255,255,255,.25)}
+html[data-theme="dark"] .sg th,html[data-theme="dark"] .sg td{border-bottom:1px solid rgba(255,255,255,.18)}
+html[data-theme="dark"] .sg tr:last-child td{border-bottom:0}
+html[data-theme="dark"] .sg .fine{color:rgba(255,255,255,.8)}
+html[data-theme="dark"] .pdp-main>.arr{border:1px solid rgba(255,255,255,.5);background:rgba(0,0,0,.55);color:#fff}
+html[data-theme="dark"] .pdp-main>.arr:hover{background:rgba(255,255,255,.22)}
+html[data-theme="dark"] .pdp-main>.ph{background:#0b0b0d}
+html[data-theme="dark"] .ph span{color:rgba(255,255,255,.7)}
+html[data-theme="dark"] .dots button{border:1px solid #fff;background:none}
+html[data-theme="dark"] .dots button[aria-current="true"]{background:#fff}
+html[data-theme="dark"] .cookie{background:rgba(10,10,12,.94);border:1px solid rgba(255,255,255,.28);color:#fff}
+html[data-theme="dark"] .ascrim{background:rgba(0,0,0,.7)}
+html[data-theme="dark"] .apanel{background:#0b0b0d;border:1px solid rgba(255,255,255,.28);color:#fff}
+html[data-theme="dark"] .apanel .tabs button{color:#fff;background:none;border:1px solid rgba(255,255,255,.35)}
+html[data-theme="dark"] .apanel .tabs button[aria-pressed="true"]{background:#2B45F5;border-color:#2B45F5}
+html[data-theme="dark"] .apanel .linkbtn{color:#fff}
+html[data-theme="dark"] .burger{background:none;border:0}
+html[data-theme="dark"] .burger span{background:#fff}
+html[data-theme="dark"] .mscrim{background:rgba(0,0,0,.65)}
+html[data-theme="dark"] .menu{background:#0b0b0d;border-right:1px solid rgba(255,255,255,.28);color:#fff}
+html[data-theme="dark"] .menu .mx{color:#fff;background:none;border:1px solid rgba(255,255,255,.4)}
+html[data-theme="dark"] .menu a,html[data-theme="dark"] .menu .ml{border:0;border-bottom:1px solid rgba(255,255,255,.18);background:none;color:#fff}
+html[data-theme="dark"] .menu small{color:rgba(255,255,255,.75)}
+html[data-theme="dark"] .catcard{background:#000;border:1px solid rgba(255,255,255,.25);color:#fff}
+html[data-theme="dark"] .catcard::after{background:linear-gradient(transparent 45%,rgba(0,0,0,.82))}
+html[data-theme="dark"] .t3{background:#0c0c0c}
+html[data-theme="dark"] .t3 .g{fill:#f2f2ee}
+html[data-theme="dark"] .t3 .d{stroke:#0c0c0c}
+html[data-theme="dark"] .sw button{border:1px solid rgba(255,255,255,.45);box-shadow:0 0 0 2px #0b0b0d inset}
+html[data-theme="dark"] .sw button[aria-pressed="true"]{outline:2px solid #fff}
+html[data-theme="dark"] ::selection{background:rgba(255,255,255,.28);color:#fff}
+html[data-theme="dark"] .eyebrow{color:rgba(255,255,255,.75)}
+html[data-theme="dark"] .btn,html[data-theme="dark"] .btn.add,html[data-theme="dark"] .df .btn,html[data-theme="dark"] .add2{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.75);color:#fff}
+html[data-theme="dark"] .btn:hover:not(:disabled),html[data-theme="dark"] .add2:hover{background:rgba(255,255,255,.22)}
+html[data-theme="dark"] .btn.ghost{background:none}
+html[data-theme="dark"] .sizes button[aria-pressed="true"],html[data-theme="dark"] .pdp .sizes button[aria-pressed="true"]{background:rgba(255,255,255,.18);border-color:#fff;color:#fff}
+html[data-theme="dark"] .apanel .tabs button[aria-pressed="true"]{background:rgba(255,255,255,.16);border-color:#fff}
+html[data-theme="dark"] .sws i{border:1px solid rgba(255,255,255,.45)}
+html[data-theme="dark"] #site footer a,html[data-theme="dark"] #site footer .fl{color:#fff;background:none;border:0}
+html[data-theme="dark"] #site footer .fcols span{color:rgba(255,255,255,.75)}
+html[data-theme="dark"] #site footer .fbase{border-top:1px solid rgba(255,255,255,.18)}
+html[data-theme="dark"] #site footer .fbase span{color:rgba(255,255,255,.7)}
 
+html[data-theme="dark"] .splash{background:#0b0b0d}
+html[data-theme="dark"] .splash-bar{background:rgba(255,255,255,.18)}
+html[data-theme="dark"] .splash-bar i,html[data-theme="dark"] .topbar i{background:#f2f2ee}
+
+/* ---- theme switch + liquid glass ---- */
+html{--glass:linear-gradient(135deg,rgba(255,255,255,.66),rgba(255,255,255,.24));--glass-brd:rgba(255,255,255,.7);--glass-shadow:0 10px 30px rgba(30,40,80,.10),inset 0 1px 0 rgba(255,255,255,.95),inset 0 -1px 0 rgba(255,255,255,.3);--blur:blur(22px) saturate(180%)}
+html[data-theme="dark"]{--glass:linear-gradient(135deg,rgba(255,255,255,.13),rgba(255,255,255,.04));--glass-brd:rgba(255,255,255,.2);--glass-shadow:0 12px 36px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.28),inset 0 -1px 0 rgba(255,255,255,.05)}
+html.theme-anim *{transition:background-color .35s ease,color .35s ease,border-color .35s ease,fill .35s ease!important}
+html[data-theme] .bgfx{background:radial-gradient(60vmax 50vmax at calc(12% + var(--mx)*14%) 8%,rgba(160,190,255,.5),transparent 62%),radial-gradient(55vmax 46vmax at calc(88% - var(--mx)*12%) 28%,rgba(222,196,255,.45),transparent 62%),radial-gradient(70vmax 50vmax at 50% 108%,rgba(255,212,190,.5),transparent 62%),#f5f6fa!important}
+html[data-theme="dark"] .bgfx{background:radial-gradient(60vmax 50vmax at calc(12% + var(--mx)*14%) 8%,rgba(70,100,220,.36),transparent 62%),radial-gradient(55vmax 46vmax at calc(88% - var(--mx)*12%) 28%,rgba(130,80,210,.30),transparent 62%),radial-gradient(70vmax 50vmax at 50% 108%,rgba(40,160,180,.22),transparent 62%),#07080c!important}
+html[data-theme] .top{top:.6rem;margin-left:.75rem;margin-right:.75rem;border-radius:22px}
+html[data-theme] .top:not(.over){margin-top:.6rem}
+html[data-theme] .top:not(.over),html[data-theme] .top.over.solid{border:1px solid var(--glass-brd);background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);box-shadow:var(--glass-shadow)}
+html[data-theme] .menu{top:.75rem;bottom:.75rem;left:.75rem;width:min(22rem,calc(100% - 1.5rem));border:1px solid var(--glass-brd);border-radius:24px;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);box-shadow:var(--glass-shadow);transform:translateX(calc(-100% - 1.5rem))}
+html[data-theme] .menu.open{transform:none}
+html[data-theme] .drawer{top:.75rem;bottom:.75rem;right:.75rem;width:min(26rem,calc(100% - 1.5rem));border:1px solid var(--glass-brd);border-radius:24px;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);box-shadow:var(--glass-shadow)}
+html[data-theme] .apanel,html[data-theme] .cookie{border:1px solid var(--glass-brd);border-radius:24px;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);box-shadow:var(--glass-shadow)}
+html[data-theme] .cookie{border-radius:20px}
+html[data-theme] .toast{background:rgba(24,26,32,.72);color:#fff;border:1px solid rgba(255,255,255,.2);border-radius:999px;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+html[data-theme] .btn,html[data-theme] .btn.add,html[data-theme] .add2{border-radius:999px;border:1px solid var(--glass-brd);background:var(--glass);color:var(--ink);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);box-shadow:var(--glass-shadow)}
+html[data-theme] .btn:hover:not(:disabled),html[data-theme] .add2:hover{filter:brightness(1.06);transform:translateY(-1px)}
+html[data-theme] .btn.ghost{background:none;box-shadow:none}
+html[data-theme] .hero-foot a{border-radius:999px;color:#fff;border:1px solid rgba(255,255,255,.55);background:rgba(255,255,255,.14);-webkit-backdrop-filter:blur(14px) saturate(160%);backdrop-filter:blur(14px) saturate(160%);box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
+html[data-theme] .hero-foot a:hover{background:rgba(255,255,255,.3);color:#fff}
+html[data-theme] .sizes button{border-radius:12px;border:1px solid var(--glass-brd);background:var(--glass);color:var(--ink);box-shadow:var(--glass-shadow)}
+html[data-theme] .sizes button[aria-pressed="true"],html[data-theme] .pdp .sizes button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+html[data-theme] .in,html[data-theme] .apanel .in{border-radius:12px;border:1px solid var(--glass-brd);background:var(--glass);color:var(--ink)}
+html[data-theme] .apanel .tabs button{border-radius:12px;border:1px solid var(--glass-brd);background:var(--glass);color:var(--ink)}
+html[data-theme] .apanel .tabs button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+html[data-theme] .tile.photo,html[data-theme] .tile{border-radius:18px}
+html[data-theme] .catcard,html[data-theme] .pdp-main{border-radius:24px;border:1px solid var(--glass-brd);box-shadow:var(--glass-shadow)}
+html[data-theme] .pdp-main>.arr{border-radius:50%;border:1px solid var(--glass-brd);background:var(--glass);color:var(--ink);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);box-shadow:var(--glass-shadow)}
+html[data-theme] .sg{border-radius:16px;border:1px solid var(--glass-brd);background:var(--glass);padding:0 1rem;box-shadow:var(--glass-shadow)}
+.themebtn{display:grid;place-items:center;width:2.3rem;height:2.3rem;padding:0;border-radius:50%}
+html[data-theme] .themebtn{border:1px solid var(--glass-brd);background:var(--glass);box-shadow:var(--glass-shadow);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur)}
+.themebtn svg{width:1.05rem;height:1.05rem}
+.themebtn .i-sun,html[data-theme="dark"] .themebtn .i-moon{display:none}
+html[data-theme="dark"] .themebtn .i-sun{display:block}
+.mtheme{display:flex;gap:.5rem;margin-top:1.5rem}
+.mtheme button{flex:1;padding:.7rem 0;font:inherit;font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;border-radius:999px;border:1px solid var(--glass-brd);background:var(--glass);color:var(--ink);box-shadow:var(--glass-shadow)}
+.mtheme button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+@media (prefers-reduced-motion:reduce){html.theme-anim *{transition:none!important}}
+html[data-theme] .menu a:not(.sub),html[data-theme] .menu .ml{padding:.75rem 0}
+html[data-theme] .menu a.sub{padding:.4rem 0 .4rem 1rem;font-size:.9rem;line-height:1.3}
+html[data-theme] .menu .mx{margin-bottom:1rem}
 </style>
 </head>
 <body>
@@ -483,6 +610,7 @@ main.swap{animation:swap .5s cubic-bezier(.2,.7,.2,1) both}
   <a href="#about">About</a>
   <button class="ml" id="mAcct" type="button">Account</button>
   <button class="ml" id="mCart" type="button">Basket</button>
+  <div class="mtheme" role="group" aria-label="Appearance"><button class="mt" data-t="light" type="button" aria-pressed="true">Light</button><button class="mt" data-t="dark" type="button" aria-pressed="false">Dark</button></div>
   <small>© Distant Youth</small>
 </aside>
 <div class="amodal" id="amodal" hidden>
@@ -543,7 +671,8 @@ main.swap{animation:swap .5s cubic-bezier(.2,.7,.2,1) both}
   <div class="wrap">
     <a class="mark" href="#top" aria-label="Distant Youth home"><div class="logo chrome" role="img" aria-label="Distant Youth"></div></a>
     <button class="burger" id="burger" type="button" aria-label="Open menu" aria-haspopup="dialog" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
-    <div class="right"><button class="cart acct" id="acctBtn" type="button" aria-haspopup="dialog">Account</button><button class="cart" id="cartBtn" type="button" aria-label="Open basket" aria-haspopup="dialog" aria-expanded="false" aria-controls="drawer">Basket (<span id="count">0</span>)</button></div>
+    <div class="right"><button class="cart themebtn" id="themeBtn" type="button" aria-label="Switch to dark mode"><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></svg><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+    <button class="cart acct" id="acctBtn" type="button" aria-haspopup="dialog">Account</button><button class="cart" id="cartBtn" type="button" aria-label="Open basket" aria-haspopup="dialog" aria-expanded="false" aria-controls="drawer">Basket (<span id="count">0</span>)</button></div>
   </div>
 </header>
 
@@ -1077,104 +1206,17 @@ window.DY_AUTH=window.DY_AUTH||{url:'',key:''}; // paste your Supabase Project U
 </script>
 <script>
 (function(){
-  var M=function(n){return 440*Math.pow(2,(n-69)/12)};
-  var PROG=[{r:41,c:[57,60,64,67]},{r:40,c:[55,59,62,67]},{r:38,c:[53,57,60,64]},{r:36,c:[55,59,64,67]}];
-  var PENTA=[65,67,69,72,74,77,79,81];
-  function impulse(ctx,sec,decay){var n=Math.floor(ctx.sampleRate*sec),b=ctx.createBuffer(2,n,ctx.sampleRate);
-    for(var c=0;c<2;c++){var d=b.getChannelData(c);for(var i=0;i<n;i++)d[i]=(Math.random()*2-1)*Math.pow(1-i/n,decay)}return b}
-  function noise(ctx,sec){var n=Math.floor(ctx.sampleRate*sec),b=ctx.createBuffer(1,n,ctx.sampleRate),d=b.getChannelData(0);
-    for(var i=0;i<n;i++)d[i]=Math.random()*2-1;return b}
-  function crackle(ctx,sec){var sr=ctx.sampleRate,n=Math.floor(sr*sec),b=ctx.createBuffer(1,n,sr),d=b.getChannelData(0),i,k;
-    for(i=0;i<n;i++)d[i]=(Math.random()*2-1)*.012;
-    for(k=0;k<sec*3;k++){var p=Math.floor(Math.random()*(n-400)),a=.12+Math.random()*.35;
-      for(i=0;i<300;i++)d[p+i]+=(Math.random()*2-1)*a*Math.exp(-i/40)}
-    return b}
-  function Engine(ctx){
-    this.ctx=ctx;this.bpm=70;this.beat=60/this.bpm;this.barDur=this.beat*4;
-    var out=this.out=ctx.createGain();out.gain.value=.55;
-    var lp=ctx.createBiquadFilter();lp.type='lowpass';lp.frequency.value=5200;lp.Q.value=.5;
-    var comp=ctx.createDynamicsCompressor();comp.threshold.value=-20;comp.ratio.value=3;comp.attack.value=.02;comp.release.value=.25;
-    lp.connect(comp);comp.connect(out);out.connect(ctx.destination);this.bus=lp;
-    var conv=this.rev=ctx.createConvolver();conv.buffer=impulse(ctx,2.6,2.4);
-    var rg=ctx.createGain();rg.gain.value=.34;conv.connect(rg);rg.connect(lp);
-    var dl=this.dly=ctx.createDelay(1);dl.delayTime.value=this.beat*.75;
-    var fb=ctx.createGain();fb.gain.value=.3;var df=ctx.createBiquadFilter();df.type='lowpass';df.frequency.value=1800;
-    var dg=ctx.createGain();dg.gain.value=.5;dl.connect(df);df.connect(fb);fb.connect(dl);df.connect(dg);dg.connect(lp);
-    this.nz=noise(ctx,2);this.i=0;this.timer=null;
+  var root=document.documentElement, btn=document.getElementById('themeBtn'), seg=document.querySelectorAll('.mt');
+  function apply(t,save,anim){
+    root.setAttribute('data-theme',t);
+    if(anim){root.classList.add('theme-anim');setTimeout(function(){root.classList.remove('theme-anim')},450)}
+    btn.setAttribute('aria-label',t==='dark'?'Switch to light mode':'Switch to dark mode');
+    [].forEach.call(seg,function(b){b.setAttribute('aria-pressed',b.getAttribute('data-t')===t?'true':'false')});
+    if(save){try{localStorage.setItem('dy-theme',t)}catch(e){}}
   }
-  Engine.prototype.tone=function(t,f,dur,o){
-    var c=this.ctx,osc=c.createOscillator(),g=c.createGain(),fl=c.createBiquadFilter();
-    osc.type=o.type||'triangle';osc.frequency.value=f;osc.detune.value=(Math.random()-.5)*12;
-    fl.type='lowpass';fl.frequency.value=o.cut||1400;
-    var a=o.att||.02,v=o.vol||.1,dec=Math.min(o.dec||.6,dur-a-.05);
-    g.gain.setValueAtTime(.0001,t);g.gain.linearRampToValueAtTime(v,t+a);
-    g.gain.exponentialRampToValueAtTime(Math.max(v*(o.sus||.4),.0002),t+a+dec);
-    g.gain.exponentialRampToValueAtTime(.0001,t+dur);
-    osc.connect(fl);fl.connect(g);g.connect(this.bus);
-    if(o.rev){var r=c.createGain();r.gain.value=o.rev;g.connect(r);r.connect(this.rev)}
-    if(o.dly){var d=c.createGain();d.gain.value=o.dly;g.connect(d);d.connect(this.dly)}
-    osc.start(t);osc.stop(t+dur+.05);
-  };
-  Engine.prototype.kick=function(t,v){
-    var c=this.ctx,o=c.createOscillator(),g=c.createGain();
-    o.type='sine';o.frequency.setValueAtTime(125,t);o.frequency.exponentialRampToValueAtTime(44,t+.18);
-    g.gain.setValueAtTime(.0001,t);g.gain.linearRampToValueAtTime(.42*v,t+.004);g.gain.exponentialRampToValueAtTime(.001,t+.3);
-    o.connect(g);g.connect(this.bus);o.start(t);o.stop(t+.35);
-  };
-  Engine.prototype.hit=function(t,type,freq,q,dur,vol){
-    var c=this.ctx,s=c.createBufferSource(),f=c.createBiquadFilter(),g=c.createGain();
-    s.buffer=this.nz;f.type=type;f.frequency.value=freq;f.Q.value=q;
-    g.gain.setValueAtTime(.0001,t);g.gain.linearRampToValueAtTime(vol,t+.003);g.gain.exponentialRampToValueAtTime(.0002,t+dur);
-    s.connect(f);f.connect(g);g.connect(this.bus);s.start(t,Math.random()*1.5);s.stop(t+dur+.02);
-  };
-  Engine.prototype.bar=function(i,t){
-    var P=PROG[i%4],b=this.beat,sw=.12*b,self=this,h=function(){return(Math.random()-.5)*.03};
-    P.c.forEach(function(n,k){
-      self.tone(t+k*.012+h(),M(n),b*3.7,{type:'triangle',vol:.05,cut:1100,att:.03,dec:1.2,sus:.35,rev:.5});
-      self.tone(t+k*.012+h(),M(n),b*3.7,{type:'sine',vol:.03,cut:900,att:.03,dec:1.2,sus:.35,rev:.3});
-      self.tone(t+2.5*b+sw+k*.012+h(),M(n),b*1.5,{type:'triangle',vol:.03,cut:1000,att:.02,dec:.5,sus:.3,rev:.5});
-    });
-    this.tone(t,M(P.r),b*2.3,{type:'sine',vol:.17,cut:420,att:.02,dec:.6,sus:.5});
-    this.tone(t+2.5*b+sw,M(P.r),b*1.2,{type:'sine',vol:.11,cut:420,att:.02,dec:.4,sus:.4});
-    this.kick(t,1);this.kick(t+2.5*b+sw,.8);if(Math.random()<.3)this.kick(t+3.5*b+sw,.6);
-    this.hit(t+b+h()/3,'bandpass',1900,.8,.14,.05);this.hit(t+3*b+h()/3,'bandpass',1900,.8,.14,.05);
-    for(var e=0;e<8;e++){var te=t+e*.5*b+(e%2?sw:0);
-      this.hit(te,'highpass',7000,.5,.04,(e%2?.012:.02)*(.7+Math.random()*.6));
-      if(i%4!==0||e>1){if(Math.random()<.27){var n2=PENTA[Math.floor(Math.random()*PENTA.length)];
-        this.tone(te,M(n2),b*1.8,{type:'sine',vol:.045,cut:2600,att:.01,dec:.5,sus:.2,rev:.6,dly:.6})}}}
-  };
-  Engine.prototype.renderBars=function(n,t0){for(var k=0;k<n;k++)this.bar(k,(t0||0)+k*this.barDur)};
-  Engine.prototype.start=function(){
-    var c=this.ctx,self=this;
-    if(!this.cr){this.cr=c.createBufferSource();this.cr.buffer=crackle(c,6);this.cr.loop=true;
-      var hp=c.createBiquadFilter();hp.type='highpass';hp.frequency.value=1500;var cg=c.createGain();cg.gain.value=.45;
-      this.cr.connect(hp);hp.connect(cg);cg.connect(this.out);this.cr.start()}
-    if(this.timer)return;
-    this.nextT=c.currentTime+.2;
-    function tick(){while(self.nextT<c.currentTime+5){self.bar(self.i++,self.nextT);self.nextT+=self.barDur}}
-    tick();this.timer=setInterval(tick,500);
-  };
-  Engine.prototype.setVol=function(v){this.out.gain.value=v};
-  window.DYChill=Engine;
-})();
-
-(function(){
-  var ctx=null,eng=null,playing=false;
-  function ensure(){
-    if(ctx)return true;
-    try{var AC=window.AudioContext||window.webkitAudioContext;ctx=new AC();eng=new DYChill(ctx);eng.setVol(.55);return true}catch(e){return false}
-  }
-  function begin(){
-    if(!ensure()||playing)return;
-    var go=function(){if(playing)return;eng.start();playing=true};
-    var r=ctx.resume();
-    if(r&&r.then)r.then(function(){if(ctx.state==='running')go()}).catch(function(){});else go();
-  }
-  /* Browsers only allow sound after a tap/click/key, so start on the first one anywhere (incl. entering the password). */
-  var evs=['pointerdown','touchend','keydown','click'];
-  function first(){evs.forEach(function(n){document.removeEventListener(n,first,true)});begin()}
-  evs.forEach(function(n){document.addEventListener(n,first,true)});
-  try{if(ensure()&&ctx.state==='running')begin()}catch(e){}
+  apply(root.getAttribute('data-theme')==='dark'?'dark':'light',false,false);
+  btn.addEventListener('click',function(){apply(root.getAttribute('data-theme')==='dark'?'light':'dark',true,true)});
+  [].forEach.call(seg,function(b){b.addEventListener('click',function(){apply(b.getAttribute('data-t'),true,true)})});
 })();
 </script>
 </body>
